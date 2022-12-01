@@ -10,10 +10,11 @@ The structure of the repository is as follows:
 - `README.md`: This file.
 - Additional files for housekeeping, such as `.gitignore` and `LICENSE`.
 - `[year]` for each year of AoC
-  - `[day]` for each day of the year
-    - `[language]` for each language used
-      - `README.md`: The puzzle description and my solution.
-      - `solution.[extension]`: The solution file.
+    - `README.md`: Contains that year's puzzle framing device.
+    - `[day]` for each day of the year
+        - `[language]` for each language used
+        - `README.md`: The puzzle description and my solution.
+        - `solution.[extension]`: The solution file.
 
 ## Languages used
 
