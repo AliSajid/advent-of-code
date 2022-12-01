@@ -9,9 +9,9 @@ The structure of the repository is as follows:
 
 - `README.md`: This file.
 - Additional files for housekeeping, such as `.gitignore` and `LICENSE`.
-- [year] for each year of AoC
-  - [day] for each day of the year
-    - [language] for each language used
+- `[year]` for each year of AoC
+  - `[day]` for each day of the year
+    - `[language]` for each language used
       - `README.md`: The puzzle description and my solution.
       - `solution.[extension]`: The solution file.
 
@@ -29,4 +29,4 @@ I will be using the following languages in decreasing order of experience:
 
 ## License
 
-This repository is licensed under the MIT License. See the LICENSE file for more details.
+This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
