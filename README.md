@@ -19,7 +19,7 @@ The structure of the repository is as follows:
 
 I will be using the following languages in decreasing order of experience:
 
-- [R](https://www.github.com/AliSajid/advent-of-code/tree/r)
+- [R](https://www.github.com/AliSajid/advent-of-code/tree/R)
 - [Python](https://www.github.com/AliSajid/advent-of-code/tree/python)
 - [Rust](https://www.github.com/AliSajid/advent-of-code/tree/rust)
 - [TypeScript](https://www.github.com/AliSajid/advent-of-code/tree/typescript)
