@@ -110,4 +110,4 @@ All year versions are currently supported
 
 ## Reporting a Vulnerability
 
-In case of a vulnurability, please send an email to [security+adventofcode@aliimami.com](mailto:security+adventofcode@aliimami.com)
+In case of a vulnerability, please send an email to [security+adventofcode@aliimami.com](mailto:security+adventofcode@aliimami.com)
