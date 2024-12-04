@@ -1,0 +1,6 @@
+[tools]
+nodejs = "lts"
+python = "3.12"
+ruby = "3.3"
+golang = "1.22"
+julia = "1.11"
