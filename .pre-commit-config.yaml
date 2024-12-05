@@ -1,13 +1,13 @@
 ci:
   autoupdate_schedule: quarterly
 
-default_stages: [commit]
+default_stages: [pre-commit]
 
 default_install_hook_types: [pre-commit, commit-msg]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.3.0
+    rev: v5.0.0
     hooks:
       - id: check-case-conflict
       - id: check-symlinks
@@ -20,7 +20,7 @@ repos:
         files: ^uses-links\.yml$
 
   - repo: https://github.com/Lucas-C/pre-commit-hooks
-    rev: v1.3.1
+    rev: v1.5.5
     hooks:
       - id: forbid-crlf
       - id: remove-crlf
@@ -28,7 +28,7 @@ repos:
       - id: remove-tabs
 
   - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v2.7.1
+    rev: v4.0.0-alpha.8
     hooks:
       - id: prettier
         args: [--config, .prettierrc, --write] # edit files in-place
@@ -36,28 +36,28 @@ repos:
           - prettier
 
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.26.3
+    rev: v1.35.1
     hooks:
       - id: yamllint
         args: [--config-file, .yamllint.yml]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.31.1
+    rev: v0.43.0
     hooks:
       - id: markdownlint
 
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.1.0
+    rev: v2.3.0
     hooks:
       - id: codespell
         args:
           - '--ignore-words-list'
           - 'ons'
-        stages: [commit, commit-msg]
+        stages: [pre-commit, commit-msg]
         exclude: pnpm-lock.yaml
 
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v8.19.0
+    rev: v9.16.0
     hooks:
       - id: eslint
         types: [file]
@@ -70,23 +70,23 @@ repos:
           - '@typescript-eslint/eslint-plugin'
           - '@typescript-eslint/parser'
   - repo: https://github.com/compilerla/conventional-pre-commit
-    rev: v1.3.0
+    rev: v3.6.0
     hooks:
       - id: conventional-pre-commit
         stages: [commit-msg]
   - repo: https://github.com/sirosen/texthooks
-    rev: 0.3.1
+    rev: 0.6.8
     hooks:
       - id: fix-smartquotes
       - id: fix-ligatures
       - id: forbid-bidi-controls
 
   - repo: https://github.com/zricethezav/gitleaks
-    rev: v8.2.0
+    rev: v8.21.2
     hooks:
       - id: gitleaks
   - repo: https://github.com/Yelp/detect-secrets
-    rev: v1.3.0
+    rev: v1.5.0
     hooks:
       - id: detect-secrets
         args: ['--exclude-files', '.*']
